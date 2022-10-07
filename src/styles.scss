@@ -1,13 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'freight-sans-bold';
+    src: local('Freight Sans Pro Medium Regular'), local('Freight-Sans-Pro-Medium-Regular'), url('../src/assets/fonts/FreightSansProMedium-Regular.woff2') format('woff2'), url('../src/assets/fonts/FreightSansProMedium-Regular.woff') format('woff'), url('../src/assets/fonts/FreightSansProMedium-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
 
-$common-font: 'Poppins', sans-serif;
+@font-face {
+    font-family: 'freight-sans-reg';
+    src: local('Freight Sans Pro Medium Regular'), local('Freight-Sans-Pro-Medium-Regular'), url('../src/assets/fonts/FreightSansProMedium-Regular.woff2') format('woff2'), url('../src/assets/fonts/FreightSansProMedium-Regular.woff') format('woff'), url('../src/assets/fonts/FreightSansProMedium-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+$common-font: 'freight-sans-bold', sans-serif;
 $heading-font: 'Montserrat', sans-serif;
 $transition: .5s all ease;
 $all-size: 16px;
 $white-color: #ffffff;
 $grey-color: #777777;
 $black-color: #0d1820;
-$gradient-green: linear-gradient(90deg, rgba(16,195,23,1) 23%, rgba(21,208,154,1) 64%);
+//$gradient-green: linear-gradient(90deg, rgba(16,195,23,1) 23%, rgba(21,208,154,1) 64%);
+$gradient-green: linear-gradient(92deg, #6a961f 23%, #75ad15 64%);
 
 
 /*-- Default CSS --*/
@@ -181,13 +195,13 @@ button {
             margin-left: 15px;
         }
         .active>.nav-link, .nav-link.active, .nav-link.show, .show>.nav-link {
-            color: #12ca59;
+            color: #6a961f;
         }
         .nav-link:focus, .nav-link:hover {
-            color: #12ca59;
+            color: #6a961f;
         }
         .nav-link:focus, .nav-link:hover {
-            color: #12ca59;
+            color: #6a961f;
         }
     }
     .navbar-nav {
@@ -203,7 +217,7 @@ button {
             margin-right: 14px;
 
             &:hover {
-                color: #12ca59;
+                color: #6a961f;
             }
         }
         .side-nav-right {
@@ -299,7 +313,7 @@ button {
                 font-size: 50px;
 
                 &:hover {
-                    background-color: #12ca59;
+                    background-color: #6a961f;
                 }
                 i {
                     width: 80px;
@@ -428,7 +442,7 @@ button {
                     line-height: 45px;
 
                     &:hover {
-                        background-color: #12ca59;
+                        background-color: #6a961f;
                     }
                 }
             }
@@ -470,7 +484,7 @@ button {
             transition: $transition;
 
             &:hover {
-                color: #12ca59 !important;
+                color: #6a961f !important;
                 background-color: $white-color !important;
             }
         }
@@ -485,7 +499,7 @@ button {
             transition: $transition;
 
             &:hover {
-                color: #12ca59 !important;
+                color: #6a961f !important;
                 background-color: $white-color !important;
             }
         }
@@ -844,7 +858,7 @@ button {
                 }
                 i {
                     display: inline-block;
-                    color: #12ca59;
+                    color: #6a961f;
                     font-size: 21px;
                     position: relative;
                     top: 4px;
@@ -955,7 +969,7 @@ button {
             }
             i {
                 display: inline-block;
-                color: #12ca59;
+                color: #6a961f;
                 font-size: 21px;
                 position: relative;
                 top: 4px;
@@ -1072,7 +1086,7 @@ button {
         margin: 5px 5px;
     }
     .owl-theme .owl-dots .owl-dot.active span {
-        background: #12ca59;
+        background: #6a961f;
         width: 21px;
     }
     .center {
@@ -1235,7 +1249,7 @@ button {
             display: inline-block;
         }
         input[type='radio']:checked:after {
-            background-color: #12ca59;
+            background-color: #6a961f;
         }
         .row {
             margin-top: 23px;
@@ -1331,7 +1345,7 @@ button {
             right: 0;
 
             &:hover {
-                background-color: #12ca59;
+                background-color: #6a961f;
             }
             i {
                 display: inline-block;
@@ -1379,7 +1393,7 @@ button {
                 left: -4px;
                 right: 0;
                 top: -4px;
-                border: 2px dashed #12ca59;
+                border: 2px dashed #6a961f;
             }
         }
         ul {
@@ -1813,7 +1827,7 @@ button {
                 color: $white-color;
 
                 &:hover {
-                    color: #12ca59;
+                    color: #6a961f;
                 }
             }
         }
@@ -1915,7 +1929,7 @@ button {
                     display: inline-block;
 
                     &:hover {
-                        color: #12ca59;
+                        color: #6a961f;
                     }
                 }
             }
@@ -1934,7 +1948,7 @@ button {
                     color: #525252;
 
                     &:hover {
-                        color: #12ca59;
+                        color: #6a961f;
                     }
                 }
             }
@@ -2230,10 +2244,10 @@ button {
 /*----- Home Two CSS -----*/
 /*-- Banner --*/
 .two-banner-one {
-    background-image: url('assets/img/banner1.jpg');
+    background-image: url('assets/img/banner1.png');
 }
 .two-banner-two {
-    background-image: url('assets/img/banner1.png');
+    background-image: url('assets/img/banner2.jpg');
 }
 .two-banner-three {
     background-image: url('assets/img/home-two/banner-slider3.jpg');
@@ -2422,7 +2436,7 @@ button {
                         color: $white-color;
 
                         &:hover {
-                            color: #12ca59;
+                            color: #6a961f;
                         }
                     }
                 }
@@ -2451,7 +2465,7 @@ button {
                         position: absolute;
                         top: 3px;
                         left: 0;
-                        background: linear-gradient(90deg, #10c317 23%, #15d09a 64%);
+                        background: #6a961f;
                         background-clip: text;
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
@@ -2477,7 +2491,7 @@ button {
                         color: #414141;
 
                         &:hover {
-                            color: #12ca59;
+                            color: #6a961f;
                         }
                     }
                 }
@@ -2505,7 +2519,7 @@ button {
             transition: $transition;
 
             &:hover {
-                color: #12ca59 !important;
+                color: #6a961f !important;
                 background-color: transparent !important;
             }
         }
@@ -2519,7 +2533,7 @@ button {
             transition: $transition;
 
             &:hover {
-                color: #12ca59 !important;
+                color: #6a961f !important;
                 background-color: transparent !important;
             }
         }
@@ -2605,7 +2619,7 @@ button {
                             line-height: 75px;
                         }
                         &:hover {
-                            background-color: #12ca59;
+                            background-color: #6a961f;
                         }
                     }
                     p {
@@ -2723,11 +2737,11 @@ button {
                 }
             }
             a {
-                color: #12ca59;
+                color: #6a961f;
 
                 i {
                     left: -1px;
-                    color: #12ca59;
+                    color: #6a961f;
                 }
             }
         }
@@ -3144,7 +3158,7 @@ button {
                 color: $white-color;
 
                 &:hover {
-                    color: #12ca59;
+                    color: #6a961f;
                 }
             }
         }
@@ -3159,7 +3173,7 @@ button {
                     color: $white-color;
 
                     &:hover {
-                        color: #12ca59;
+                        color: #6a961f;
                     }
                 }
             }
@@ -3257,7 +3271,7 @@ button {
                 .banner-play {
                     text-align: center;
                     background-color: $white-color;
-                    color: #12ca59;
+                    color: #6a961f;
                     font-size: 35px;
                     box-shadow: 0px 0px 20px 0px #dddddd9e;
                     display: inline-block;
@@ -3265,7 +3279,7 @@ button {
 
                     &:hover {
                         color: $white-color;
-                        background-color: #12ca59;
+                        background-color: #6a961f;
                     }
                     i {
                         width: 65px;
@@ -3325,7 +3339,7 @@ button {
                         border-bottom: 1px solid $white-color;
 
                         &:hover {
-                            border-bottom: 1px solid #12ca59;
+                            border-bottom: 1px solid #6a961f;
                         }
                     }
                 }
@@ -3605,7 +3619,7 @@ button {
             margin-bottom: 30px;
         }
         &:hover {
-            background-color: #12ca59;
+            background-color: #6a961f;
 
             h3 {
                 color: $white-color;
@@ -3614,7 +3628,7 @@ button {
                 color: $white-color;
             }
             &:before {
-                border-left: 35px solid #12ca59;
+                border-left: 35px solid #6a961f;
             }
         }
         &:before {
@@ -3744,7 +3758,7 @@ button {
 
 /*-- Counter --*/
 .three-counter-area {
-    background-image: url('assets/img/home-three/counter-bg.jpg');
+    background-image: url('assets/img/banner2.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -3885,7 +3899,7 @@ button {
                 font-size: 25px;
 
                 &:hover {
-                    color: #12ca59;
+                    color: #6a961f;
                 }
             }
             i {
@@ -3967,7 +3981,7 @@ button {
             background-color: $white-color;
 
             span {
-                color: #12ca59;
+                color: #6a961f;
                 background-color: #cff3d2;
             }
             h3 {
@@ -4194,7 +4208,7 @@ button {
         width: 11px;
         height: 11px;
         background: transparent;
-        border: 1px solid #12ca59;
+        border: 1px solid #6a961f;
     }
     .owl-theme .owl-dots .owl-dot.active span {
         width: 15px;
@@ -4209,7 +4223,7 @@ button {
             top: 4px;
             right: 3px;
             border-radius: 50%;
-            background-color: #12ca59;
+            background-color: #6a961f;
         }
     }
 }
@@ -4382,13 +4396,13 @@ button {
             }
         }
         .side-nav-right {
-            color: #12ca59;
+            color: #6a961f;
             background-color: $white-color;
             border-radius: 50px;
 
             &:hover {
                 color: $white-color;
-                background-color: #12ca59;
+                background-color: #6a961f;
             }
             &:before {
                 display: none;
@@ -4466,7 +4480,7 @@ button {
             li {
                 a {
                     display: block;
-                    color: #12ca59;
+                    color: #6a961f;
                     font-size: $all-size;
                     background-color: #e1f4e3;
                     border-radius: 4px;
@@ -4609,7 +4623,7 @@ button {
                     margin-right: 0;
 
                     a {
-                        color: #12ca59;
+                        color: #6a961f;
                         background-color: #e7faf4;
                         border-radius: 4px;
                     }
@@ -4639,7 +4653,7 @@ button {
                         .about-support {
                             i {
                                 display: inline-block;
-                                color: #12ca59;
+                                color: #6a961f;
                                 font-size: 40px;
                                 margin-bottom: 10px;
                                 top: 0;
@@ -5093,8 +5107,8 @@ button {
                 border-bottom: 1px solid $black-color;
 
                 &:hover {
-                    color: #12ca59;
-                    border-bottom: 1px solid #12ca59;
+                    color: #6a961f;
+                    border-bottom: 1px solid #6a961f;
                 }
             }
         }
@@ -5156,7 +5170,7 @@ button {
                 a {
                     padding: 20px 20px 20px;
                     font-size: 19px;
-                    color: #12ca59;
+                    color: #6a961f;
     
                     &:after {
                         right: 10px;
@@ -5280,7 +5294,7 @@ button {
 
                 &:hover {
                     color: $white-color;
-                    background-color: #12ca59;
+                    background-color: #6a961f;
                 }
             }
         }
@@ -5365,7 +5379,7 @@ button {
                         font-size: $all-size;
                         background-color: $white-color;
                         padding: 14px 16px;
-                        color: #12ca59;
+                        color: #6a961f;
                         position: relative;
                         z-index: 1;
 
@@ -5473,7 +5487,7 @@ button {
                         line-height: 45px;
 
                         &:hover {
-                            background-color: #12ca59;
+                            background-color: #6a961f;
                         }
                     }
                 }
@@ -5665,7 +5679,7 @@ button {
 
                 &:hover {
                     color: $white-color;
-                    background-color: #12ca59;
+                    background-color: #6a961f;
                 }
             }
         }
@@ -5749,7 +5763,7 @@ button {
                     width: 30px;
                     height: 30px;
                     line-height: 30px;
-                    color: #12ca59;
+                    color: #6a961f;
                     background-color: #dcf7e4;
                     text-align: center;
                     border-radius: 50%;
@@ -5776,7 +5790,7 @@ button {
             padding: 12px 23px 14px 29px;
             display: inline-block;
             background-color: #e7faf1;
-            color: #12ca59;
+            color: #6a961f;
 
             &:hover {
                 color: $white-color;
@@ -6058,12 +6072,12 @@ button {
             ul {
                 li {
                     a {
-                        color: #12ca59;
-                        border: 1px solid #12ca59;
+                        color: #6a961f;
+                        border: 1px solid #6a961f;
 
                         &:hover {
                             color: $white-color;
-                            background-color: #12ca59;
+                            background-color: #6a961f;
                         }
                     }
                 }
@@ -6109,8 +6123,8 @@ button {
         .copyright-item {
             p {
                 a {
-                    color: #12ca59;
-                    border-bottom: 1px solid #12ca59;
+                    color: #6a961f;
+                    border-bottom: 1px solid #6a961f;
                 }
             }
         }
@@ -6419,25 +6433,25 @@ button {
             }
         }
         .progress.blue .progress-bar{
-            border-color: #12ca59;
+            border-color: #6a961f;
         }
         .progress.blue .progress-left .progress-bar{
             animation: loading-2 1.5s linear forwards 1.8s;
         }
         .progress.yellow .progress-bar{
-            border-color: #12ca59;
+            border-color: #6a961f;
         }
         .progress.yellow .progress-left .progress-bar{
             animation: loading-3 1s linear forwards 1.8s;
         }
         .progress.pink .progress-bar{
-            border-color: #12ca59;
+            border-color: #6a961f;
         }
         .progress.pink .progress-left .progress-bar{
             animation: loading-4 0.4s linear forwards 1.8s;
         }
         .progress.green .progress-bar{
-            border-color: #12ca59;
+            border-color: #6a961f;
         }
         .progress.green .progress-left .progress-bar{
             animation: loading-5 1.2s linear forwards 1.8s;
@@ -6646,7 +6660,7 @@ button {
                         line-height: 30px;
                         border-radius: 50%;
                         text-align: center;
-                        color: #12ca59;
+                        color: #6a961f;
                         background-color: #dcf7e2;
                         margin-right: 5px;
                         font-size: 18px;
@@ -6666,7 +6680,7 @@ button {
                 }
                 .nearly-btn {
                     display: inline-block;
-                    color: #12ca59;
+                    color: #6a961f;
                     background-color: #e7f9ec;
                     border-radius: 50px;
                     padding: 12px 20px 14px 28px;
@@ -6674,7 +6688,7 @@ button {
 
                     &:hover {
                         color: $white-color;
-                        background-color: #12ca59;
+                        background-color: #6a961f;
                     }
                     i {
                         display: inline-block;
@@ -6940,8 +6954,8 @@ button {
                 border-bottom: 1px solid #2e2e2e;
 
                 &:hover {
-                    color: #12ca59;
-                    border-bottom: 1px solid #12ca59;
+                    color: #6a961f;
+                    border-bottom: 1px solid #6a961f;
                 }
             }
         }
@@ -6996,7 +7010,7 @@ button {
 }
 .back-to-top-btn {
     i {
-        background: #12ca59;
+        background: #6a961f;
         color: $white-color;
         height: 50px;
         width: 50px;
@@ -7007,7 +7021,7 @@ button {
         border-radius: 50%;
         transition: $transition;
         margin-right: 28px;
-        box-shadow: 0px 0px 14px 0px #12ca59;
+        box-shadow: 0px 0px 14px 0px #6a961f;
 
         &:hover {
             background: $black-color;
