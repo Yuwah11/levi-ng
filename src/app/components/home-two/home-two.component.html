@@ -72,9 +72,9 @@
 </div>
 
 <div id="about" class="three-about-area five-about-area pb-70">
-    <div class="about-shape">
-        <img src="assets/img/home-five/about-shape2.png" alt="About">
-    </div>
+    <!-- <div class="about-shape">
+        <img src="assets/img/home-five/about-shape2.png" alt="About" style="opacity:0.1">
+    </div> -->
 
     <div class="container">
         <div class="row align-items-center">
@@ -96,7 +96,7 @@
                         
 
                         <div class="tab-content">
-                            <div class="tab-pane fade show active" id="pills-home-two" role="tabpanel" aria-labelledby="pills-home-tab-two">
+                            <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="pills-home-tab-two">
                                 <p>Ginko Nursery was established in 2017 with
                                     a vision to provide top quality and reliable
                                     landscaping services to clients from all
@@ -113,7 +113,9 @@
                                     atmosphere to your environment, which in
                                     turn adds value to your brand. </p>
 
-                                <p>Leaf it to us, as we say, for your success!</p>
+                                <p>
+                                    <span style="font-family:'darling';font-size:30px;vertical-align:middle;">Leaf it to us</span>
+                                    , as we say, for your success!</p>
                             </div>
 
                         </div>
@@ -135,7 +137,7 @@
             <div class="col-sm-6 col-lg-4">
                 <div class="expect-item" style="padding-top: 35px;">
                     <div class="expect-icon">
-                        <i class='bx bx-money'></i>
+                        <img src="../../../assets/img/planting.png" width="44px">
                     </div>
                     <h3>Natural Landscaping</h3>
                     <!-- <a routerLink="/home-four">Read More <i class='bx bx-right-arrow-alt'></i></a> -->
@@ -145,16 +147,16 @@
             <div class="col-sm-6 col-lg-4">
                 <div class="expect-item" style="padding-top: 35px;">
                     <div class="expect-icon">
-                        <i class='bx bxs-hand-up'></i>
+                        <img src="../../../assets/img/lawn-mower.png" width="44px">
                     </div>
                     <h3>Artificial Landscaping</h3>
                 </div>
             </div>
 
             <div class="col-sm-6 col-lg-4">
-                <div class="expect-item">
+                <div class="expect-item" style="padding-top: 35px;">
                     <div class="expect-icon">
-                        <i class='bx bx-home-smile'></i>
+                        <img src="../../../assets/img/landscape.png" width="44px">
                     </div>
                     <h3>Landscape Care and Maintenance</h3>
                 </div>
@@ -165,7 +167,7 @@
             <div class="col-sm-6 col-lg-4">
                 <div class="expect-item" style="padding-top: 35px;">
                     <div class="expect-icon">
-                        <i class='bx bx-money'></i>
+                        <img src="../../../assets/img/plant.png" width="44px">
                     </div>
                     <h3>Plant Nursery</h3>
                 </div>
@@ -174,7 +176,7 @@
             <div class="col-sm-6 col-lg-4">
                 <div class="expect-item" style="padding-top: 35px;">
                     <div class="expect-icon">
-                        <i class='bx bxs-hand-up'></i>
+                        <img src="../../../assets/img/plant (1).png" width="44px">
                     </div>
                     <h3>Plant Rental Service</h3>
                 </div>
@@ -187,9 +189,17 @@
     <div class="container">
         <div class="one-section-title">
             <span class="sub-title">WHAT WE HAVE DONE</span>
-            <h2>Selected Projects (Only)</h2>
+            
+            <div><h2 tooltip="This is to protect the privacy of our clients who do not wish to disclose
+             any photo of their projects of private residence." flow="down">Selected Projects (Only)</h2>
+            </div>
+            
             
         </div>
+
+        <!-- <div>
+            <span tooltip="Get Down." flow="down">Down</span>
+          </div> -->
 
         <div class="row">
             <!-- <div class="col-sm-6 col-lg-4">
@@ -308,6 +318,9 @@
                     </div>
                 </div>
             </div>
+            <p class="text-center" style="cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;"><img src="../../../assets/img/leaf.png" width="30px;" style="margin-top:-10px;margin-right: 13px;">See more</p>
         </div>
     </div>
 </div>
@@ -318,8 +331,12 @@
             <div class="col-sm-12 col-lg-12">
                 <div class="counter-item"> 
                     <h4>Need Consultations?</h4>
-                    <p>We Are Always With You Contact With Us.</p>
+                    <p style="margin-bottom:25px;">We Are Always With You Contact With Us.</p>
+                    <div class="banner-btn">
+                        <a class="cmn-banner-btn" routerLink="/"><i class='bx bx-phone-call'></i> Contact Us</a>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </div>
@@ -332,55 +349,67 @@
             <h2>What People Say</h2>
         </div>
 
-        <div class="row">
-            <div class="col-lg-6">
+        <div class="four-step-slider owl-theme owl-carousel">
+
+            <div class="step-item">
                 <div class="lover-item">
                     <ul class="align-items-center">
                         <li>
                             <div class="lover-img">
-                                <img src="assets/img/home-two/lover1.png" alt="Lover">
+                                <img src="assets/img/user.jpg" alt="Lover">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lover-content ">
+                                <h3>Donney Jon</h3>
+                                <!-- <span>Perisian Org</span> -->
+                                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iusto nostrum quibusdam dolores consectetur voluptates beatae 
+                                </p>
+                            
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="step-item">
+                <div class="lover-item">
+                    <ul class="align-items-center">
+                        <li>
+                            <div class="lover-img">
+                                <img src="assets/img/user.jpg" alt="Lover">
                                 <i class='bx bxs-quote-alt-left'></i>
                             </div>
                         </li>
                         <li>
                             <div class="lover-content">
                                 <h3>Donney Jon</h3>
-                                <span>Perisian Org</span>
-                                <p>I had ipsum dolor sit a consetusicing elit sed do eiusmod mpor nnim ad mini eiusmod nnim </p>
-                                <ul>
-                                    <li><i class='bx bxs-star checked'></i></li>
-                                    <li><i class='bx bxs-star checked'></i></li>
-                                    <li><i class='bx bxs-star checked'></i></li>
-                                    <li><i class='bx bxs-star checked'></i></li>
-                                    <li><i class='bx bxs-star checked'></i></li>
-                                </ul>
+                                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iusto nostrum quibusdam dolores consectetur voluptates beatae 
+                                </p>
+                            
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
-            
-            <div class="col-lg-6">
+
+
+            <div class="step-item">
                 <div class="lover-item">
                     <ul class="align-items-center">
                         <li>
                             <div class="lover-img">
-                                <img src="assets/img/home-two/lover2.png" alt="Lover">
+                                <img src="assets/img/user.jpg" alt="Lover">
                                 <i class='bx bxs-quote-alt-left'></i>
                             </div>
                         </li>
                         <li>
                             <div class="lover-content">
-                                <h3>Oli Rubion</h3>
-                                <span>Entoin Ect</span>
-                                <p>Realy ipsum dolor sit a consetusicing elit sed do eiusmod mpor nnim ad mini eiusmod nnim </p>
-                                <ul>
-                                    <li><i class='bx bxs-star checked'></i></li>
-                                    <li><i class='bx bxs-star checked'></i></li>
-                                    <li><i class='bx bxs-star checked'></i></li>
-                                    <li><i class='bx bxs-star checked'></i></li>
-                                    <li><i class='bx bxs-star checked'></i></li>
-                                </ul>
+                                <h3>Donney Jon</h3>
+                                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iusto nostrum quibusdam dolores consectetur voluptates beatae 
+                                </p>
+                            
                             </div>
                         </li>
                     </ul>
@@ -389,83 +418,4 @@
         </div>
     </div>
 </section>
-
-<footer class="one-footer-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-lg-3">
-                <div class="footer-item">
-                    <div class="footer-logo">
-                        <a routerLink="/"><img src="assets/img/logo.png" alt="Logo"></a>
-                      
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-3">
-                <div class="footer-item">
-                    <div class="footer-address">
-                        <h3>Contact Address</h3>
-                        <p>No.159, Nay Kyar Street, Pearl 3rd Quarter, Mingaladon Township, Yangon, Myanmar</p>
-
-                        <ul>
-                            <li>
-                                <i class='bx bx-phone-call'></i>
-                                <a href="tel:+4498886660000">09 42103 7785</a>
-                            </li>
-                            <li>
-                                <i class='bx bx-message-square-detail'></i>
-                                <a href="mailto:hello@levi.com">sales1@ginkonursery.com</a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-3">
-                <div class="footer-item">
-                    <div class="footer-quick">
-                        <h3>Quick Links</h3>
-
-                        <ul>
-                            <li><a routerLink="/">Services</a></li>
-                            <li><a routerLink="/">Projects</a></li>
-                            <li><a routerLink="/">Testimonials</a></li>
-                            <li><a routerLink="/">Contact Us</a></li>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-3">
-                <div class="footer-item">
-                    <h3>Connect with Us</h3>
-                    <div class="footer-logo">
-                       
-                        <ul>
-                            <li><a href="https://www.facebook.com/ginkonursery" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                            <li><a href="https://www.instagram.com/ginkonursery/?hl=en" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                            <li><a href="#" target="_blank"><i class='bx bxl-slack'></i></a></li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-           
-        </div>
-
-        <div class="copyright-area">
-            <div class="row align-items-center">
-
-                <div class="col-lg-12">
-                    <div class="copyright-item">
-                        <p>Copyright @2022 Ginko Nursery. All Right Reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+<app-footer></app-footer>

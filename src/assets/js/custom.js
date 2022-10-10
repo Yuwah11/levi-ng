@@ -131,7 +131,7 @@ jQuery(function ($) {
 	// Step Slider JS
 	$('.four-step-slider').owlCarousel({
 		center: true,
-		items: 4,
+		items: 2,
 		loop: true,
 		margin: 50,
 		nav: false,
@@ -148,7 +148,7 @@ jQuery(function ($) {
 				items:2,
 			},
 			1000:{
-				items:4,
+				items:2,
 			}
 		}
 	});
@@ -156,7 +156,7 @@ jQuery(function ($) {
 	// Step Slider Two JS
 	$('.four-step-slider-two').owlCarousel({
 		center: true,
-		items: 4,
+		items: 2,
 		loop: true,
 		margin: 50,
 		nav: false,
