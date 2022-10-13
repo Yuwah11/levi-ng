@@ -11,6 +11,8 @@ import { ServiceComponent } from './components/service/service.component';
 import { InnerBannerComponent } from './components/elements/inner-banner/inner-banner.component';
 import { FooterComponent } from './components/elements/footer/footer.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
+import { SliderPopupComponent } from './components/slider-popup/slider-popup.component';
+import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ContactusComponent } from './components/contactus/contactus.component';
     ServiceComponent,
     InnerBannerComponent,
     FooterComponent,
-    ContactusComponent
+    ContactusComponent,
+    SliderPopupComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,

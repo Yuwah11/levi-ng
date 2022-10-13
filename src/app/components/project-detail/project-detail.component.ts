@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Projects } from '../elements/DTO/projectlists.dto';
-import { ProjectlistService } from '../elements/projectlist.service';
+import { ProjectlistService } from '../projectlist.service';
 
 @Component({
   selector: 'app-project-detail',
