@@ -13,6 +13,8 @@ import { FooterComponent } from './components/elements/footer/footer.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { SliderPopupComponent } from './components/slider-popup/slider-popup.component';
 import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ProjectListsComponent } from './components/project-lists/project-lists.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ProjectDetailComponent } from './components/project-detail/project-deta
     FooterComponent,
     ContactusComponent,
     SliderPopupComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
+    ProjectsComponent,
+    ProjectListsComponent
   ],
   imports: [
     BrowserModule,

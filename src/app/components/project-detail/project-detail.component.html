@@ -21,7 +21,7 @@
         <div class="one-section-title">
             <span class="sub-title">WHAT WE HAVE DONE</span>
             
-            <div><h2>{{project.title}} @ {{project.location}}</h2>
+            <div><h2>{{project.title}} <span *ngIf="project.location">@ {{project.location}}</span></h2>
             </div>
             
             
@@ -37,8 +37,10 @@
             </figure>
             
         </div> -->
-    
+
     </div>
 </section>
+
+<app-slider-popup [project_image]="image" *ngIf="popupShow" [selected]="paramID"></app-slider-popup>
 
 <app-footer></app-footer>
